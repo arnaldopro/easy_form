@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        #masculino, #feminino{
+            margin: 0%;
+            padding: 0%;
+            text-align: left;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="imgUser"></div>
+        <h1>Cadastre-se</h1>
+        <div id="box">
+            <form action="">
+                <label for="nome">Nome Completo:</label>
+                <input class="campo" type="text" name="nome" id="nome" placeholder="Nome">
+                <br>
+
+                <label for="email">Email:</label>
+                <input class="campo" type="email" name="email" id="email" placeholder="exemplo@email.com"> 
+                <br>
+
+                <label for="nacionalidade">País:</label>
+                <input class="campo" type="text" name="nacionalidade" id="nacionalidade" placeholder="Nacionalidade (opcional)">
+                <br>   
+
+                <label for="dataNasc">Data de nascimento:</label>
+                <input type="date" name="dataNasc" id="dataNasc">
+                <br>
+
+                Sexo:
+                <br>
+                <input type="radio" name="genero" id="masculino" required checked>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br> <br>
+
+                <label for="telefone">Telefone</label>
+                <input class="campo" type="tel" name="telefone" id="telefone" placeholder="--- --- --- (opcional)">
+                <br>
+
+                <label for="password">Password:</label>
+                <input class="campo" type="password" name="password" id="password" placeholder="********"> 
+                <br>
+
+                <p>
+                    <a href="login.html" rel="next" target="_self"><span>Login</span></a>
+                </p>
+
+                <input type="submit" class="btn" value="Cadastrar" id="submit" onclick="send()">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Copyright Arnaldo Jr - 2021</p>    
+    </footer>
+</body>
+</html>

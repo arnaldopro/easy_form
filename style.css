@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('font/OpenSans.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    --font: 'OpenSans';
+    --cor0: #00000080;
+    --cor1: #0099ff;
+    --cor2: #0000ffaf;
+    --cor3: #ff0077af;
+}
+
+body{
+    color: white;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2)), url(img/background.jpg);
+    font: normal 1.1em var(--font);
+}
+
+.imgUser{
+    background-image: linear-gradient(to right, #ff007779, #0099ff82), url(img/images.png);
+    width: 188px;
+    height: 180px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+section{
+    font-weight: bold;
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: 50px auto auto auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+}
+
+h1{
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, transparent, var(--cor3), var(--cor1), transparent);
+    text-align: center;
+    margin: 50px;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+}
+
+form{
+    padding: 20px;
+}
+
+input{
+    font: bold 15px cursive,var(--font);
+    width: 250px;
+    color: white;
+    margin: 0px 0px 30px 10px;
+}
+
+input:hover{
+    border-color: white;
+}
+
+.campo{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--cor1);
+    outline: none;
+}
+
+#dataNasc{
+    outline: none;
+    border: 2px solid var(--cor1);
+    border-radius: 10px;
+    background-color: var(--cor0);
+    color: white;
+    width: 170px;
+    padding: 5px;
+}
+
+.btn{
+    font: bold 1em var(--font);
+    margin-left: 170px;
+    padding: 3px;
+    border-radius: 20px;
+    text-align: center;
+    width: 150px;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor3));
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-image: linear-gradient(to right, var(--cor3), var(--cor1));
+}
+
+#submit{
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+
+span{
+    color: var(--cor1);
+}
+
+span:hover{
+    text-decoration: line-through var(--cor3);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.social{
+    margin: 50px 10px 0px 0px ;
+    display: inline-block;
+    width: 200px;
+}
